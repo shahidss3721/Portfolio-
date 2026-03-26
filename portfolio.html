@@ -21,7 +21,7 @@
         }
 
         /* Navbar Fix */
-        .navbar {
+        .navbar {#f5c577
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -45,6 +45,9 @@
             color: #ffffff;
             text-decoration: none;
             font-weight: 600;
+        }
+        .nav_links a :hover{
+            color: #f39c12;
         }
 
         /* Hero Banner */
@@ -102,22 +105,40 @@
             width: 23%;
             padding: 15px;
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
             transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
         }
         .cookies:hover { transform: translateY(-10px); }
         .cookies .image img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; }
         .price { 
             background: #f39c12; color: white; padding: 5px 15px; 
             border-radius: 20px; width: fit-content; margin-bottom: 10px; 
+            margin: 0 auto 10% auto;
+        }
+        .add_to_cart{
+             background: #f39c12; color: white; padding: 5px 15px; 
+            border-radius: 20px; width: fit-content; margin-bottom: 10px; 
+            text-align: center; 
+            width: 100%;
+            transition: 0.3s;
+        }
+        .add_to_cart:hover{
+            transform: translateY(-5px);
+            background-color: #f5c577;
+            color: #f39c12;
+            font-weight: bold;
         }
 
         /* Contact Section Fix */
         .contact_us {
             display: flex;
-            flex-wrap: wrap; /* Taaki responsive rahe */
+            flex-wrap: wrap;
             background-color: rgba(0,0,0,0.7);
-            color: #ffffff;
+            color: whitesmoke;
             gap: 30px;
         }
         .contact_us > div { flex: 1; min-width: 200px; }
@@ -134,10 +155,10 @@
             <a href="#" class="logo-name">Bakery Bliss</a>
         </div>
         <ul class="nav_links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="#about_us">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact_us">Contact</a></li>
         </ul>
     </nav>
 
@@ -149,7 +170,7 @@
         </div>
     </div>
 
-    <div class="about_us">
+    <div class="about_us" id="about_us">
         <h2 class="about_main_text">About Us</h2>
         <div class="about_flex_content">
             <div class="about_text">
@@ -163,18 +184,63 @@
         </div>
     </div>
 
-    <div class="product">
+    <div class="product" id="product">
         <h2 class="about_main_text" style="font-size: 70px;">Our Products</h2>
         <div class="product_flex_1">
             <div class="cookies">
                 <div class="price">$15.00</div>
                 <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
                 <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div><div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div>
+            <div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div>
+            <div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div>
+        </div>
+        <div class="product_flex_1">
+            <div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div>
+            <div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div>
+            <div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+                <div class="add_to_cart">Add to cart</div>
+            </div>
+            <div class="cookies">
+                <div class="price">$15.00</div>
+                <div class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzEaKanL4sWgAg-tGlqivg3FAwFpmg0p3MA&s"></div>
+                <p>Handcrafted with pure butter and premium chocolate chunks.</p>
+            
+            <div class="add_to_cart">Add to cart</div>
             </div>
             </div>
     </div>
 
-    <div class="contact_us">
+    <div class="contact_us" id="contact_us">
         <div class="info">
             <p>We would love to hear from you! Visit our cozy corner in Shop No. 12, Royal Heritage, Baramati.</p>
         </div>
